@@ -1,0 +1,24 @@
+<p>
+เงาะไงจะใครละ หน้า home นะจ๊ะ
+</p>
+
+<div class="container color-dark">
+  <div class="col">
+    <p>Add your list</p>
+  </div>
+  <div class="col">
+    <p>  {{itemcount}} </p>
+  </div>
+</div>
+
+<div class="container color-light">
+    <div class="col">
+        <form action="#">
+          <input type="text" name="item" placeholder="กรอกดิสัส" class="txt"  [(ngModel)]="listText"  >
+          <input type="submit" value="{{itemname}}" class="btn" (click)=addItem() >
+        </form>
+      </div>
+      <div class="col">
+        <p *ngFor="let data of all_data " >{{data}}</p>
+      </div>
+</div>
